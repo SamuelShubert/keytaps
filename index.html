@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Keyboard Taps</title>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Samuel Shubert's learning porject  Keytaps">
+    <meta name="keywords" content="Samuel, Shubert, learning, project, keyboard, keys, keytaps, web, developer">
+    <meta name="author" content="Samuel Shubert">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="keytaps.css">
+    <script src="obfuscated.js"></script>
+    <link rel="icon" href="icon.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dynalight&display=swap" rel="stylesheet">
+</head>
+
+<body id="bodyID" onload="firsts()">
+    <div id="scene">
+        <div id="keyboard_bottom">
+            <div id="keys_wrap">
+                <div class="keycaps function_keys" id="Escape"></div>
+                <div class="keycaps function_keys" id="F1"></div>
+                <div class="keycaps function_keys" id="F2"></div>
+                <div class="keycaps function_keys" id="F3"></div>
+                <div class="keycaps function_keys" id="F4"></div>
+                <div class="keycaps function_keys" id="F5"></div>
+                <div class="keycaps function_keys" id="F6"></div>
+                <div class="keycaps function_keys" id="F7"></div>
+                <div class="keycaps function_keys" id="F8"></div>
+                <div class="keycaps function_keys" id="F9"></div>
+                <div class="keycaps function_keys" id="F10"></div>
+                <div class="keycaps function_keys" id="F11"></div>
+                <div class="keycaps function_keys" id="F12"></div>
+                <br>
+                <div class="keycaps regular_keys" id="Backquote"></div>
+                <div class="keycaps regular_keys" id="Digit1"></div>
+                <div class="keycaps regular_keys" id="Digit2"></div>
+                <div class="keycaps regular_keys" id="Digit3"></div>
+                <div class="keycaps regular_keys" id="Digit4"></div>
+                <div class="keycaps regular_keys" id="Digit5"></div>
+                <div class="keycaps regular_keys" id="Digit6"></div>
+                <div class="keycaps regular_keys" id="Digit7"></div>
+                <div class="keycaps regular_keys" id="Digit8"></div>
+                <div class="keycaps regular_keys" id="Digit9"></div>
+                <div class="keycaps regular_keys" id="Digit0"></div>
+                <div class="keycaps regular_keys" id="Minus"></div>
+                <div class="keycaps regular_keys" id="Equal"></div>
+                <div class="keycaps big_keys_1" id="Backspace"></div>
+                <br>
+                <div class="keycaps big_keys_1" id="Tab"></div>
+                <div class="keycaps regular_keys" id="KeyQ"></div>
+                <div class="keycaps regular_keys" id="KeyW"></div>
+                <div class="keycaps regular_keys" id="KeyE"></div>
+                <div class="keycaps regular_keys" id="KeyR"></div>
+                <div class="keycaps regular_keys" id="KeyT"></div>
+                <div class="keycaps regular_keys" id="KeyY"></div>
+                <div class="keycaps regular_keys" id="KeyU"></div>
+                <div class="keycaps regular_keys" id="KeyI"></div>
+                <div class="keycaps regular_keys" id="KeyO"></div>
+                <div class="keycaps regular_keys" id="KeyP"></div>
+                <div class="keycaps regular_keys" id="BracketLeft"></div>
+                <div class="keycaps regular_keys" id="BracketRight"></div>
+                <div class="keycaps regular_keys" id="Backslash"></div>
+                <br>
+                <div class="keycaps big_keys_2" id="CapsLock"></div>
+                <div class="keycaps regular_keys" id="KeyA"></div>
+                <div class="keycaps regular_keys" id="KeyS"></div>
+                <div class="keycaps regular_keys" id="KeyD"></div>
+                <div class="keycaps regular_keys" id="KeyF"></div>
+                <div class="keycaps regular_keys" id="KeyG"></div>
+                <div class="keycaps regular_keys" id="KeyH"></div>
+                <div class="keycaps regular_keys" id="KeyJ"></div>
+                <div class="keycaps regular_keys" id="KeyK"></div>
+                <div class="keycaps regular_keys" id="KeyL"></div>
+                <div class="keycaps regular_keys" id="Semicolon"></div>
+                <div class="keycaps regular_keys" id="Quote"></div>
+                <div class="keycaps big_keys_2" id="Enter"></div>
+                <br>
+                <div class="keycaps big_keys_3" id="ShiftLeft"></div>
+                <div class="keycaps regular_keys" id="KeyZ"></div>
+                <div class="keycaps regular_keys" id="KeyX"></div>
+                <div class="keycaps regular_keys" id="KeyC"></div>
+                <div class="keycaps regular_keys" id="KeyV"></div>
+                <div class="keycaps regular_keys" id="KeyB"></div>
+                <div class="keycaps regular_keys" id="KeyN"></div>
+                <div class="keycaps regular_keys" id="KeyM"></div>
+                <div class="keycaps regular_keys" id="Comma"></div>
+                <div class="keycaps regular_keys" id="Period"></div>
+                <div class="keycaps regular_keys" id="Slash"></div>
+                <div class="keycaps big_keys_3" id="ShiftRight"></div>
+                <br>
+                <div class="keycaps big_keys_1" id="ControlLeft"></div>
+                <div class="keycaps big_keys_1" id="MetaLeft"></div>
+                <div class="keycaps big_keys_1" id="AltLeft"></div>
+                <div class="keycaps spacebar" id="Space"></div>
+                <div class="keycaps big_keys_1" id="AltRight"></div>
+                <div class="keycaps big_keys_1" id="MetaRight"></div>
+                <div class="keycaps big_keys_1" id=""></div>
+                <div class="keycaps big_keys_1" id="ControlRight"></div>
+            </div>
+        </div>
+    </div>
+    <h1 id="helloworld">HELLO WORLD</h1>
+    <p id="creatorTag">Created by Samuel Shubert</p>
+    <div id="intro">
+        <h1 id="mainTitle">TAP YOUR KEYS...</h1>
+        <p><b>CREATED USING VANILLA CSS AND JAVASCRIPT</b></p>
+        <p>Press down on your keyboard keys to see the key animate on screen. Try changing the 3D keyboard perspective and colour. This was a learning project by Samuel.</p>
+    </div>
+    <div id="menu">
+        <button class="toggles" onclick="doPerspective(1)">Change Perspective</button>
+        <button class="toggles" onclick="doKeyboardStyle(1)">Change Colour</button>
+    </div>
+    <div id="mobileAlert">The key tapping doesn't work on mobile but you can still view the site.</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,245 @@
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    margin: 0%;
+}
+
+#helloworld {
+    position: absolute;
+    font-size: 3em;
+    font-family: 'Teko', sans-serif;
+    color: rgba(255, 99, 71, 1);
+    top: 10%;
+    left: 50%;
+    margin: 0%;
+    width: 0px;
+    transform: translateX(-50%);
+    overflow: hidden;
+    border-right: .05em solid white;
+    white-space: nowrap;
+    letter-spacing: .1em;
+    animation: typing 8s 1s;
+}
+
+@keyframes typing {
+    0% {
+        opacity: 1;
+        width: 0em;
+    }
+    40%,
+    90% {
+        opacity: 1;
+        width: 5.6em;
+    }
+    100% {
+        opacity: 0;
+        width: 5.6em;
+    }
+}
+
+#creatorTag {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 150%;
+    color: gray;
+    margin: 0%;
+    font-family: 'Dynalight', cursive;
+    transition: all 1.4s ease;
+    opacity: 0;
+}
+
+#intro {
+    position: absolute;
+    width: 560px;
+    transition: all 1.4s ease;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#intro>p {
+    padding: 0px 20px;
+    margin: 0%;
+    color: gray;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+#mainTitle {
+    font-family: 'Teko', sans-serif;
+    font-size: 600%;
+    margin: 0%;
+}
+
+.toggles {
+    border: none;
+    width: 160px;
+    height: 44px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    color: gray;
+    box-shadow: rgba(70, 70, 70, 0.2) 4px 4px 0px;
+    font-weight: bold;
+}
+
+.toggles:hover {
+    transform: scale(1.06);
+    box-shadow: rgba(70, 70, 70, 0.2) 8px 8px 20px;
+}
+
+#menu {
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    width: 160px;
+    transition: all 1.4s ease;
+    opacity: 0;
+}
+
+#mobileAlert {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 230px;
+    padding: 10px;
+    word-wrap: break-word;
+    background-color: rgba(222, 184, 135, 0.4);
+    display: none;
+}
+
+#scene {
+    perspective: 1000px;
+    width: 100%;
+    height: 100%;
+    font-size: 0%;
+}
+
+#keyboard_bottom {
+    position: absolute;
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    transform: rotateX(40deg) translateX(-50%) translateY(-50%);
+}
+
+#keys_wrap {
+    transform: translateZ(15px);
+}
+
+#keyboard_bottom,
+#keys_wrap {
+    transform-style: preserve-3d;
+    height: 432px;
+    width: 1025px;
+    transition: all 1s ease;
+}
+
+.regular_keys {
+    height: 50px;
+    width: 50px;
+}
+
+.function_keys {
+    height: 32px;
+    width: 50px;
+}
+
+#F1,
+#F5,
+#F9 {
+    margin-left: 50px;
+}
+
+.big_keys_1 {
+    height: 50px;
+    width: 74px;
+}
+
+.big_keys_2 {
+    height: 50px;
+    width: 97px;
+}
+
+.big_keys_3 {
+    height: 50px;
+    width: 132px;
+}
+
+.spacebar {
+    height: 50px;
+    width: 326px;
+}
+
+.keycaps {
+    transform-style: preserve-3d;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    transition: all 0.2s ease;
+}
+
+#KeyH {
+    animation: SingleTap 1s 1s ease;
+}
+
+#KeyE {
+    animation: SingleTap 1s 1.2s ease;
+}
+
+#KeyL {
+    animation: SingleTap 1s 1.4s ease, SingleTap 1s 1.6s ease, SingleTap 1s 2.8s ease;
+}
+
+#KeyO {
+    animation: SingleTap 1s 1.8s ease, SingleTap 1s 2.4s ease;
+}
+
+#Space {
+    animation: SingleTap 1s 2s ease;
+}
+
+#KeyW {
+    animation: SingleTap 1s 2.2s ease;
+}
+
+#KeyR {
+    animation: SingleTap 1s 2.6s ease;
+}
+
+#KeyD {
+    animation: SingleTap 1s 3s ease;
+}
+
+@keyframes SingleTap {
+    0%,
+    100% {
+        transform: translateZ(0px);
+        box-shadow: initial;
+        background-color: rgb(26, 26, 26);
+    }
+    30% {
+        transform: translateZ(-6px);
+        box-shadow: rgba(255, 255, 255, 0.03) 0px 0px 6px;
+        background-color: rgba(255, 99, 71, 1);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #mainTitle {
+        font-size: 200%;
+    }
+    #intro {
+        box-sizing: border-box;
+        width: 200px;
+    }
+    #intro>p {
+        font-size: 10px;
+    }
+    #mobileAlert {
+        display: initial;
+    }
+}
